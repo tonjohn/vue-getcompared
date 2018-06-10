@@ -1,0 +1,84 @@
+{
+  "mortgage": {
+    "m0": {
+      ".key": "m0",
+      "name": "",
+      "logo": "",
+      "rating": 5,
+      "detailList": [],
+      "isTopChoice": false,
+      "tags": {}
+    },
+    "lendingtree": {
+      ".key": "lendingtree",
+      "name": "Lending Tree",
+      "logo": "lendingtree.png",
+      "rating": 5,
+      "detailList": [
+        "Our Editor’s Top Choice",
+        "Consumers have saved on average $34,000 over the life of their loan by refinancing their home loan through LendingTree",
+        "Convient online process"
+      ],
+      "isTopChoice": true,
+      "tags": {
+        "home_refinance": true,
+        "home_purchase": true,
+        "excellent": true,
+        "good": true,
+        "fair": true,
+        "poor": true,
+        "single_family": true,
+        "town_house": true,
+        "condo": true,
+        "multifamily": true,
+        "co-op": true
+      }
+    },
+    "quickenloans": {
+      ".key": "quickenloans",
+      "name": "Quicken Loans",
+      "logo": "quickenloans.png",
+      "rating": 4.9,
+      "detailList": [
+        "Flexible fixed term and adjustable rate mortgage options",
+        "Highest ranking in customer service by J.D. Power for 8 consecutive years",
+        "Offer 1% down home purchase loan",
+        "Cash out mortgage options"
+      ],
+      "isTopChoice": false,
+      "tags": {
+        "home_refinance": true,
+        "home_purchase": true,
+        "excellent": true,
+        "good": true,
+        "fair": true,
+        "poor": true,
+        "single_family": true,
+        "town_house": true,
+        "condo": true,
+        "multifamily": true,
+        "co-op": true,
+        "bujotest": true
+      }
+    }
+  },
+  "tags": {
+    "loanType": {
+      "home_refinance": ["lendingtree", "quickenloans"],
+      "home_purchase": ["lendingtree", "quickenloans"]
+    },
+    "creditScore": {
+      "excellent": ["lendingtree", "quickenloans"],
+      "good": ["lendingtree", "quickenloans"],
+      "fair": ["lendingtree", "quickenloans"],
+      "poor": ["lendingtree", "quickenloans"]
+    },
+    "homeType": {
+      "single_family": ["lendingtree", "quickenloans"],
+      "town_house": ["lendingtree", "quickenloans"],
+      "condo": ["lendingtree", "quickenloans"],
+      "multifamily": ["lendingtree", "quickenloans"],
+      "co-op": ["lendingtree", "quickenloans"]
+    }
+  }
+}
