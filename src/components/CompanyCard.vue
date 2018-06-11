@@ -13,9 +13,7 @@
     <div class="col-md-6">
         <div class="desc_detail">
             <ul class="check">
-                <li class="check">Our Editor’s Top Choice</li>
-                <li class="check">Consumers have saved on average $34,000 over the life of their loan by refinancing their home loan through LendingTree</li>
-                <li class="check">Convient online process</li>
+                <li class="check" v-for="detail in company.detailList">{{detail}}</li>
             </ul>
         </div>
     </div>
