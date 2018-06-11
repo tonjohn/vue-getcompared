@@ -20,12 +20,17 @@
         </div>
     </div>
     <div class="col-md-3">
-        <div class="link_learn">
-            <div v-if="phone" class="phone-list">(800) 813-4620</div>
+        <div v-if="company.phone" class="link_learn">
+            <div class="phone-list">{{company.phone}}</div>
             <a href="http://click.getcompared.com/aff_c?offer_id=4&amp;aff_id=1" class="tracking-link">View Rates</a>
             <br>
             <a class="desc_link" href="reviews/lendingtree">Read Review</a>
         </div>
+        <div v-else class="link_learn">
+                <a href="#" class="ybtn ybtn-accent-color">View Rates</a>
+                <br>
+                <a class="desc_link" href="reviews/quickenloans">Read Review</a>
+            </div>
     </div>
 </div>
     <!-- <div class="list_item home_refinance home_purchase unknown excellent good fair poor single_family town_house condo multifamily co-op">
