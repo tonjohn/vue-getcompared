@@ -33,14 +33,13 @@
         </div>
     </div>
 
-    <div style="text-align: center; margin-top: 15px; margin-bottom: 15px;" data-toggle="collapse" data-target="#filter" class=""
-        aria-expanded="true">Show Filters</div>
+    <div @click="showFilters = !showFilters" style="text-align: center; margin-top: 15px; margin-bottom: 15px;" data-toggle="collapse" data-target="#filter" class="">Show Filters</div>
 
-    <div id="filter" style="margin-top: 15px;" class="container collapse in" aria-expanded="true">
+    <div v-if="showFilters" id="filter" style="margin-top: 15px;" class="container collapse in" :aria-expanded="showFilters">
         <div class="col-md-3">
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Loan Type</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select @change="isDirty=true" v-model="selectedLoanType" class="form-control" id="exampleFormControlSelect1">
                     <option value="home_refinance">Home Refinance</option>
                     <option value="home_purchase">Home Purchase</option>
                 </select>
@@ -49,7 +48,7 @@
         <div class="col-md-3">
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Credit Score</label>
-                <select class="form-control" id="exampleFormControlSelect2">
+                <select @change="isDirty=true" v-model="selectedCreditScore"  class="form-control" id="exampleFormControlSelect2">
                     <option value="unknown">Unknown</option>
                     <option value="excellent">Excellent</option>
                     <option value="good">Good</option>
@@ -61,7 +60,7 @@
         <div class="col-md-3">
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Home Type</label>
-                <select class="form-control" id="exampleFormControlSelect3">
+                <select @change="isDirty=true"  v-model="selectedHomeType"  class="form-control" id="exampleFormControlSelect3">
                     <option value="single_family">Single Family</option>
                     <option value="town_house">Town House</option>
                     <option value="condo">Condo</option>
@@ -72,14 +71,14 @@
         </div>
         <div class="col-md-3">
             <div v-if="isDirty" class="form-group">
-                <a href="#" class="ybtn ybtn-white ybtn-shadow">Reset</a>
+                <button @click="isDirty=false" class="ybtn ybtn-white ybtn-shadow">Reset</button>
             </div>
         </div>
     </div>
 
     <!-- Company List start -->
     <div class="container items_container">
-        <CompanyCard v-for="company in companies" :key="company['.key']" :company="company"/>
+        <CompanyCard v-for="company in filteredCompanies" :key="company['.key']" :company="company"/>
 
     </div>
     <!-- Company List end -->
@@ -117,13 +116,36 @@ export default {
   data() {
     return {
       companies: sourceData.mortgage,
-      isDirty: false
+      showFilters: false,
+      selectedLoanType: this.$route.query.loantype
+        ? this.$route.query.loantype
+        : "home_purchase",
+      selectedHomeType: this.$route.query.hometype
+        ? this.$route.query.hometype
+        : "single_family",
+      selectedCreditScore: this.$route.query.creditscore
+        ? this.$route.query.creditscore
+        : "good",
+      isDirty:
+        this.$route.query.loantype ||
+        this.$route.query.hometype ||
+        this.$route.query.creditscore
+          ? true
+          : false
     };
   },
   computed: {
     filteredCompanies() {
-      // TODO: filter based on input values
-      return this.companies;
+      if (!this.isDirty) return this.companies;
+      return Object.entries(this.companies)
+        .map(entry => entry[1])
+        .filter(company => {
+          return (
+            company.tags[this.selectedLoanType] &&
+            company.tags[this.selectedHomeType] &&
+            company.tags[this.selectedCreditScore]
+          );
+        });
     }
   }
 };
