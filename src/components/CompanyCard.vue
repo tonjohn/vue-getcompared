@@ -1,12 +1,12 @@
 <template>
 <div class="list_item home_refinance home_purchase unknown excellent good fair poor single_family town_house condo multifamily co-op">
     <div class="col-md-3">
-        <img v-if="company.isTopChoice" class="flag" src="images/top-choice-banner.png">
+        <img v-if="company.isTopChoice" class="flag" src="../assets/top-choice-banner.png">
         <center>
-            <img class="list-image" :src='`images/${company.logo}`'>
+            <img class="list-image" :src='require(`../assets/${company.logo}`)'>
             <div class="star-rating">
-                <img class="star" src="images/svg/star.svg">
-                <div class="our-rating">OUR RATING | {{ company.name }}</div>
+                <img class="star" :src='require(`../assets/svg/${starsImg}`)'>
+                <div class="our-rating">OUR RATING | {{ company.rating }}</div>
             </div>
         </center>
     </div>
@@ -30,11 +30,11 @@
 </div>
     <!-- <div class="list_item home_refinance home_purchase unknown excellent good fair poor single_family town_house condo multifamily co-op">
         <div class="col-md-3">
-            <img class="flag" src="images/top-choice-banner.png">
+            <img class="flag" src="../assets/top-choice-banner.png">
             <center>
-                <img class="list-image" src="images/lendingtree.png">
+                <img class="list-image" src="../assets/lendingtree.png">
                 <div class="star-rating">
-                    <img class="star" src="images/svg/star.svg">
+                    <img class="star" src="../assets/svg/star.svg">
                     <div class="our-rating">OUR RATING | 5.0</div>
                 </div>
             </center>
@@ -69,15 +69,13 @@ export default {
   },
   data() {
     return {
-      items: sourceData.tech,
-      users: sourceData.users,
-      categories: sourceData.categories,
-      userId: this.$route.params.userId
+      tags: sourceData.tags
     };
   },
   computed: {
-    user() {
-      return this.users[this.userId];
+    starsImg() {
+      if (this.company.rating >= 4.9) return "star.svg";
+      return "4-half.svg";
     }
   }
 };

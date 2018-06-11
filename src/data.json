@@ -1,13 +1,25 @@
 {
   "mortgage": {
-    "m0": {
-      ".key": "m0",
-      "name": "",
-      "logo": "",
-      "rating": 5,
-      "detailList": [],
+    "bujo": {
+      ".key": "bujo",
+      "name": "Bank of Bujo",
+      "logo": "bujo.jpg",
+      "rating": 2,
+      "detailList": [
+        "Mo money, mo problems",
+        "Highest interest rates in america",
+        "Give me yo money"
+      ],
       "isTopChoice": false,
-      "tags": {}
+      "tags": {
+        "home_purchase": true,
+        "fair": true,
+        "poor": true,
+        "single_family": true,
+        "town_house": true,
+        "condo": true,
+        "multifamily": true
+      }
     },
     "lendingtree": {
       ".key": "lendingtree",

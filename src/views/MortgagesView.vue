@@ -79,231 +79,8 @@
 
     <!-- Company List start -->
     <div class="container items_container">
-        <div class="list_item home_refinance home_purchase unknown excellent good fair poor single_family town_house condo multifamily co-op">
-            <div class="col-md-3">
-                <img class="flag" src="../assets/top-choice-banner.png">
-                <center>
-                    <img class="list-image" src="../assets/lendingtree.png">
-                    <div class="star-rating">
-                        <img class="star" src="../assets/svg/star.svg">
-                        <div class="our-rating">OUR RATING | 5.0</div>
-                    </div>
-                </center>
-            </div>
-            <div class="col-md-6">
-                <div class="desc_detail">
-                    <ul class="check">
-                        <li class="check-secondary">Our Editor’s Top Choice</li>
-                        <li class="check">Consumers have saved on average $34,000 over the life of their loan by refinancing their home loan
-                            through LendingTree</li>
-                        <li class="check-secondary">Convient online process</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="link_learn">
-                    <div class="phone-list">(800) 813-4620</div>
-                    <a href="http://click.getcompared.com/aff_c?offer_id=4&amp;aff_id=1" class="tracking-link">View Rates</a>
-                    <br>
-                    <a class="desc_link" href="reviews/lendingtree">Read Review</a>
-                </div>
-            </div>
-        </div>
-        <div class="list_item home_refinance home_purchase unknown excellent good fair poor single_family town_house condo multifamily co-op">
-            <div class="col-md-3">
-                <center>
-                    <img class="list-image" src="../assets/quickenloans.png">
-                    <div class="star-rating">
-                        <img class="star" src="../assets/svg/star.svg">
-                        <div class="our-rating">OUR RATING | 4.9</div>
-                    </div>
-                </center>
-            </div>
-            <div class="col-md-6">
-                <div class="desc_detail">
-                    <ul class="check">
-                        <li class="check">Flexible fixed term and adjustable rate mortgage options</li>
-                        <li class="check">Highest ranking in customer service by J.D. Power for 8 consecutive years</li>
-                        <li class="check-secondary">Offer 1% down home purchase loan</li>
-                        <li class="check-secondary">Cash out mortgage options</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="link_learn">
-                    <a href="#" class="ybtn ybtn-accent-color">View Rates</a>
-                    <br>
-                    <a class="desc_link" href="reviews/quickenloans">Read Review</a>
-                </div>
-            </div>
-        </div>
-        <div class="list_item home_refinance home_purchase unknown excellent good fair poor single_family town_house condo multifamily co-op">
-            <div class="col-md-3">
-                <center>
-                    <img class="list-image" src="../assets/loandepot.png">
-                    <div class="star-rating">
-                        <img class="star" src="../assets/svg/4-half.svg">
-                        <div class="our-rating">OUR RATING | 4.8</div>
-                    </div>
-                </center>
-            </div>
-            <div class="col-md-6">
-                <div class="desc_detail">
-                    <ul class="check">
-                        <li class="check">Extremely competitive ARP’s</li>
-                        <li class="check">Offers fixed-rate, adjustable-rate, home equity, FHA, jumbo, and VA mortgages</li>
-                        <li class="check-secondary">LoanDepot Lifetime Guarantee</li>
-                        <li class="check-secondary">No application fees</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="link_learn">
-                    <a href="#" class="ybtn ybtn-accent-color">View Rates</a>
-                    <br>
-                    <a class="desc_link" href="reviews/loandepot">Read Review</a>
-                </div>
-            </div>
-        </div>
-        <div class="list_item home_refinance home_purchase unknown excellent good fair poor single_family town_house condo multifamily co-op">
-            <div class="col-md-3">
-                <center>
-                    <img class="list-image" src="../assets/jgwentworth.png">
-                    <div class="star-rating">
-                        <img class="star" src="../assets/svg/4-half.svg">
-                        <div class="our-rating">OUR RATING | 4.8</div>
-                    </div>
-                </center>
-            </div>
-            <div class="col-md-6">
-                <div class="desc_detail">
-                    <ul class="check">
-                        <li class="check">Low rates with no point options</li>
-                        <li class="check">Offer fixed-rate, adjustable-rates, FHA, Jumbo, and VA mortgages</li>
-                        <li class="check-secondary">25+ year history of customer service excellence</li>
-                        <li class="check-secondary">Direct lender</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="link_learn">
-                    <a href="#" class="ybtn ybtn-accent-color">View Rates</a>
-                    <br>
-                    <a class="desc_link" href="reviews/jgwentworth">Read Review</a>
-                </div>
-            </div>
-        </div>
-        <div class="list_item home_purchase unknown excellent good fair poor single_family town_house condo multifamily co-op">
-            <div class="col-md-3">
-                <center>
-                    <img class="list-image" src="../assets/bettermortgage.png">
-                    <div class="star-rating">
-                        <img class="star" src="../assets/svg/4-half.svg">
-                        <div class="our-rating">OUR RATING | 4.7</div>
-                    </div>
-                </center>
-            </div>
-            <div class="col-md-6">
-                <div class="desc_detail">
-                    <ul class="check">
-                        <li class="check">The Better Price Guarantee ensures the lender will beat a competitor's offer by at least $1000 or
-                            you’ll get a $1000 check</li>
-                        <li class="check">An impressively simple online process</li>
-                        <li class="check-secondary">Offers a variety of loan options online</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="link_learn">
-                    <a href="#" class="ybtn ybtn-accent-color">View Rates</a>
-                    <br>
-                    <a class="desc_link" href="reviews/better">Read Review</a>
-                </div>
-            </div>
-        </div>
-        <div class="list_item home_refinance unknown excellent good fair poor single_family town_house condo multifamily co-op">
-            <div class="col-md-3">
-                <center>
-                    <img class="list-image" src="../assets/bettermortgage.png">
-                    <div class="star-rating">
-                        <img class="star" src="../assets/svg/4-half.svg">
-                        <div class="our-rating">OUR RATING | 4.7</div>
-                    </div>
-                </center>
-            </div>
-            <div class="col-md-6">
-                <div class="desc_detail">
-                    <ul class="check">
-                        <li class="check">The Better Price Guarantee ensures the lender will beat a competitor's offer by at least $1000 or
-                            you’ll get a $1000 check</li>
-                        <li class="check">An impressively simple online process</li>
-                        <li class="check-secondary">Offers a variety of loan options online</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="link_learn">
-                    <a href="#" class="ybtn ybtn-accent-color">View Rates</a>
-                    <br>
-                    <a class="desc_link" href="reviews/better">Read Review</a>
-                </div>
-            </div>
-        </div>
-        <div class="list_item home_refinance home_purchase unknown excellent good fair poor single_family town_house condo multifamily co-op">
-            <div class="col-md-3">
-                <center>
-                    <img class="list-image" src="../assets/rocketmortgage.png">
-                    <div class="star-rating">
-                        <img class="star" src="../assets/svg/4-half.svg">
-                        <div class="our-rating">OUR RATING | 4.6</div>
-                    </div>
-                </center>
-            </div>
-            <div class="col-md-6">
-                <div class="desc_detail">
-                    <ul class="check">
-                        <li class="check">A completely, truly online solution.</li>
-                        <li class="check">Highest ranking lender in customer satisfaction by J.D. Power and Associates for 8 consecutive years.</li>
-                        <li class="check-secondary">Offers a 1% down home purchase loan.</li>
-                        <li class="check-secondary">Offers cash-out mortgages.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="link_learn">
-                    <a href="#" class="ybtn ybtn-accent-color">View Rates</a>
-                    <br>
-                    <a class="desc_link" href="reviews/rocketmortgage">Read Review</a>
-                </div>
-            </div>
-        </div>
-        <div class="list_item home_refinance home_purchase unknown excellent good fair poor single_family town_house condo multifamily co-op">
-            <div class="col-md-3">
-                <center>
-                    <img class="list-image" src="../assets/amerisave.png">
-                    <div class="star-rating">
-                        <img class="star" src="../assets/svg/4-half.svg">
-                        <div class="our-rating">OUR RATING | 4.4</div>
-                    </div>
-                </center>
-            </div>
-            <div class="col-md-6">
-                <div class="desc_detail">
-                    <ul class="check">
-                        <li class="check">Amerisave is the original online lender</li>
-                        <li class="check">Online process keeps costs low</li>
-                        <li class="check-secondary">A direct lender that has funded billions in loans</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="link_learn">
-                    <a href="#" class="ybtn ybtn-accent-color">View Rates</a>
-                    <br>
-                    <a class="desc_link" href="reviews/amerisave">Read Review</a>
-                </div>
-            </div>
-        </div>
+        <CompanyCard v-for="company in companies" :key="company['.key']" :company="company"/>
+
     </div>
     <!-- Company List end -->
     <div class="spacer"></div>
@@ -329,11 +106,18 @@
 </template>
 
 <script>
+import sourceData from "../data"; // load placeholder data
+
 // @ is an alias to /src
 import CompanyCard from "@/components/CompanyCard.vue";
 
 export default {
   name: "mortgages",
-  components: {}
+  components: { CompanyCard },
+  data() {
+    return {
+      companies: sourceData.mortgage
+    };
+  }
 };
 </script>
