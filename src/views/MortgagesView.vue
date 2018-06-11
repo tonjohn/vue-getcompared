@@ -118,6 +118,12 @@ export default {
     return {
       companies: sourceData.mortgage
     };
+  },
+  computed: {
+    filteredCompanies() {
+      // TODO: filter based on input values
+      return this.companies;
+    }
   }
 };
 </script>
