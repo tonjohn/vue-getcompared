@@ -71,8 +71,8 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="form-group">
-                <a href="#" class="ybtn ybtn-white ybtn-shadow">Refresh</a>
+            <div v-if="isDirty" class="form-group">
+                <a href="#" class="ybtn ybtn-white ybtn-shadow">Reset</a>
             </div>
         </div>
     </div>
@@ -116,7 +116,8 @@ export default {
   components: { CompanyCard },
   data() {
     return {
-      companies: sourceData.mortgage
+      companies: sourceData.mortgage,
+      isDirty: false
     };
   },
   computed: {
