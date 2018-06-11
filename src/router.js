@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Mortgages from "./views/MortgagesView.vue";
 import About from "./views/About.vue";
+import Faq from "./views/Faq.vue";
 
 Vue.use(Router);
 
@@ -22,6 +23,11 @@ export default new Router({
       path: "/mortgages",
       name: "mortgages",
       component: Mortgages
+    },
+    {
+      path: "/faq",
+      name: "faq",
+      component: Faq
     }
   ]
 });

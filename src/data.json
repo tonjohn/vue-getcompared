@@ -39,7 +39,7 @@
         "excellent": true,
         "good": true,
         "fair": true,
-        "poor": true,
+        "poor": false,
         "single_family": true,
         "town_house": true,
         "condo": true,
@@ -77,21 +77,54 @@
   },
   "tags": {
     "loanType": {
-      "home_refinance": ["lendingtree", "quickenloans"],
-      "home_purchase": ["lendingtree", "quickenloans"]
+      "home_refinance": [
+        "lendingtree",
+        "quickenloans"
+      ],
+      "home_purchase": [
+        "lendingtree",
+        "quickenloans"
+      ]
     },
     "creditScore": {
-      "excellent": ["lendingtree", "quickenloans"],
-      "good": ["lendingtree", "quickenloans"],
-      "fair": ["lendingtree", "quickenloans"],
-      "poor": ["lendingtree", "quickenloans"]
+      "excellent": [
+        "lendingtree",
+        "quickenloans"
+      ],
+      "good": [
+        "lendingtree",
+        "quickenloans"
+      ],
+      "fair": [
+        "lendingtree",
+        "quickenloans"
+      ],
+      "poor": [
+        "lendingtree",
+        "quickenloans"
+      ]
     },
     "homeType": {
-      "single_family": ["lendingtree", "quickenloans"],
-      "town_house": ["lendingtree", "quickenloans"],
-      "condo": ["lendingtree", "quickenloans"],
-      "multifamily": ["lendingtree", "quickenloans"],
-      "co-op": ["lendingtree", "quickenloans"]
+      "single_family": [
+        "lendingtree",
+        "quickenloans"
+      ],
+      "town_house": [
+        "lendingtree",
+        "quickenloans"
+      ],
+      "condo": [
+        "lendingtree",
+        "quickenloans"
+      ],
+      "multifamily": [
+        "lendingtree",
+        "quickenloans"
+      ],
+      "co-op": [
+        "lendingtree",
+        "quickenloans"
+      ]
     }
   }
 }
