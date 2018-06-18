@@ -13,7 +13,7 @@
     <div class="col-md-6">
         <div class="desc_detail">
             <ul class="check">
-                <li class="check" v-for="detail in company.detailList">{{detail}}</li>
+                <li class="check" v-for="detail in company.detailList" v-bind:key="detail.id" >{{detail}}</li>
             </ul>
         </div>
     </div>
